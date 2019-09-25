@@ -1,0 +1,12 @@
+####### folders
+#css/
+####### files
+*.scss
+fonts.txt
+palette*
+##style.css
+*.map
+#*.html
+.DS_Store
+z-delete*
+*.pxd
