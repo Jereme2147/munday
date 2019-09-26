@@ -33,7 +33,7 @@ html h3 {
 }
 
 body {
-  background: url("/images/curcuit-board.jpg");
+  background: url("./images/curcuit-board.jpg");
   background-repeat: repeat;
   background-size: contain;
   -webkit-transition: background-color 0.5s ease-in-out;
