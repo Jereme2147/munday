@@ -19,6 +19,7 @@ function burger(id) {
         menu.style.pointerEvents = "auto";
         // new
         body.style.backgroundImage = 'none';
+        // $('#body').css("background-image", 'none').fadeOut();
         logo.style.opacity = '0';
         // body.style.backgroundColor = 'rgba(162, 174, 187, 1)';
     }
