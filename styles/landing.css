@@ -162,7 +162,7 @@ body {
   }
 }
 
-.landing-top-section {
+.landing-section-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,11 +170,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.8) 100%);
+  border-radius: 5px;
+  margin-top: 10px;
   width: 100%;
 }
 
 @media (min-width: 950px) {
-  .landing-top-section {
+  .landing-section-services {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -213,6 +218,18 @@ body {
   }
 }
 
+.landing-top-image-odd {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.landing-top-words-odd {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
 .landing-top-words {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +255,7 @@ body {
 .landing-top-words h1 {
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .landing-top-words h2 {
@@ -256,12 +273,13 @@ body {
 }
 
 main {
-  width: 95%;
+  width: 99%;
 }
 
 @media (min-width: 950px) {
   main {
-    width: 95%;
+    width: 99%;
+    max-width: 1500px;
   }
 }
 
@@ -335,25 +353,17 @@ nav {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 95%;
-  margin-top: 20px;
+  width: 99%;
+  max-width: 1500px;
+  margin-top: 10px;
   background-color: #ffffff;
   border-radius: 5px;
 }
 
 @media (min-width: 950px) {
   nav {
-    margin-top: 20px;
+    margin-top: 10px;
   }
-}
-
-section {
-  background-color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0.8)));
-  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.8) 100%);
-  border-radius: 5px;
-  margin-top: 10px;
-  width: 100%;
 }
 
 footer {
@@ -367,6 +377,7 @@ footer {
           flex-direction: column;
   background-color: #3f88c5;
   border-top: 1px solid #1c3144;
+  margin-top: 20px;
 }
 
 .footer-phone {

@@ -1,3 +1,4 @@
+const desktop = window.matchMedia("(min-width: 950px)");
 //reusable menu funtion
 function burger(id) {
     // const burger = document.getElementById('mobile-hamburger');
@@ -24,3 +25,8 @@ function burger(id) {
         // body.style.backgroundColor = 'rgba(162, 174, 187, 1)';
     }
 }
+// not entire certain how I want to handle image / word swap for mobile.
+// if (!desktop.matches){
+//     const sideLoad = document.getElementsByClassName('landing-top-image-odd');
+
+// }
