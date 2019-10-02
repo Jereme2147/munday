@@ -26,7 +26,38 @@ function burger(id) {
     }
 }
 // not entire certain how I want to handle image / word swap for mobile.
-// if (!desktop.matches){
-//     const sideLoad = document.getElementsByClassName('landing-top-image-odd');
+$(document).ready(function() {
 
-// }
+    $('.services-card').click(function() {
+        if (!desktop.matches) {
+            const height = $(this).css('height');
+            if (height == '75px') {
+                // $(this).css({ "height": "auto" });
+                $(this).animate({ height: '500px' }, 500);
+                // $(this).animate({ opacity: '1' }, 500);
+                // $('.services-card img:first-child').css({ opacity: '1' });
+                // $(`${this}.img:first-child`).css({ opacity: '1' });
+            } else {
+                // $(this).css({ "height": "75px" });
+                $(this).animate({ height: '75px' }, 500);
+                // $(this).animate({ opacity: '.7' }, 500);
+                // $(this).css({ "opacity": '.7' });
+            }
+        } else {
+            const height = $(this).css('height');
+            if (height == '125px') {
+                // $(this).css({ "height": "auto" });
+                $(this).animate({ height: '700px' }, 500);
+                // $(this).animate({ opacity: '1' }, 500);
+                // $('.services-card img:first-child').css({ opacity: '1' });
+                // $(`${this}.img:first-child`).css({ opacity: '1' });
+            } else {
+                // $(this).css({ "height": "75px" });
+                $(this).animate({ height: '125px' }, 500);
+                // $(this).animate({ opacity: '.7' }, 500);
+                // $(this).css({ "opacity": '.7' });
+            }
+        }
+        
+    })
+})

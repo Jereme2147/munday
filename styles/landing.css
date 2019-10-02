@@ -279,7 +279,7 @@ main {
 @media (min-width: 950px) {
   main {
     width: 99%;
-    max-width: 1500px;
+    max-width: 1200px;
   }
 }
 
@@ -354,7 +354,7 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 99%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin-top: 10px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -363,6 +363,175 @@ nav {
 @media (min-width: 950px) {
   nav {
     margin-top: 10px;
+  }
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.landing-vendors-section {
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.8) 100%);
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.landing-vendors-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing-vendors-title h2 {
+  width: 90%;
+  text-align: center;
+  color: #1c3144;
+  font-family: "Nunito Sans", sans-serif;
+  border-bottom: 1px solid #1c3144;
+  -webkit-box-shadow: 0 1px #3f88c5;
+          box-shadow: 0 1px #3f88c5;
+}
+
+@media (min-width: 950px) {
+  .landing-vendors-title h2 {
+    font-size: 40px;
+  }
+}
+
+.landing-vendors-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing-vendors-logos a {
+  width: 30%;
+  margin: 5px;
+}
+
+.landing-vendors-logos a img {
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 2px #3f88c5, -1px -1px #ffba08;
+          box-shadow: 1px 1px 2px #3f88c5, -1px -1px #ffba08;
+  border-radius: 3px;
+}
+
+@media (min-width: 950px) {
+  .landing-vendors-logos a {
+    width: 20%;
+    margin: 8px;
+    padding: 3px;
+  }
+  .landing-vendors-logos a:hover {
+    opacity: .5;
+  }
+}
+
+.services-title {
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.8) 100%);
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  color: #1c3144;
+}
+
+.services-title h2 {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 950px) {
+  .services-title h2 {
+    font-size: 40px;
+  }
+}
+
+.services-card {
+  background-color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, white), to(rgba(255, 255, 255, 0.8)));
+  background: linear-gradient(to bottom, white 30%, rgba(255, 255, 255, 0.8) 100%);
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 0;
+  height: 75px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-card img {
+  width: 100%;
+  opacity: .5;
+}
+
+.services-card img:hover {
+  opacity: 1;
+}
+
+.services-card:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 950px) {
+  .services-card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 48%;
+    height: 125px;
+  }
+}
+
+.service-heading {
+  position: absolute;
+}
+
+.service-heading h2 {
+  z-index: 3;
+  font-family: "Muli", sans-serif;
+  color: #1c3144;
+  padding: 20px;
+  text-shadow: 1px 1px #ffba08;
+  font-weight: bolder;
+}
+
+@media (min-width: 950px) {
+  .service-heading h2 {
+    font-size: 40px;
   }
 }
 
