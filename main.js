@@ -32,30 +32,24 @@ $(document).ready(function() {
         if (!desktop.matches) {
             const height = $(this).css('height');
             if (height == '75px') {
-                // $(this).css({ "height": "auto" });
-                $(this).animate({ height: '500px' }, 500);
-                // $(this).animate({ opacity: '1' }, 500);
-                // $('.services-card img:first-child').css({ opacity: '1' });
-                // $(`${this}.img:first-child`).css({ opacity: '1' });
+                $(this).animate({ height: '550px' }, 500);
+                $(this).removeClass("services-card-not-selected"); //only way to effectivly change opacity
+                $(this).addClass("services-card-selected");
             } else {
-                // $(this).css({ "height": "75px" });
                 $(this).animate({ height: '75px' }, 500);
-                // $(this).animate({ opacity: '.7' }, 500);
-                // $(this).css({ "opacity": '.7' });
+                $(this).removeClass("services-card-selected");
+                $(this).addClass("services-card-not-selected");
             }
         } else {
             const height = $(this).css('height');
-            if (height == '125px') {
-                // $(this).css({ "height": "auto" });
-                $(this).animate({ height: '700px' }, 500);
-                // $(this).animate({ opacity: '1' }, 500);
-                // $('.services-card img:first-child').css({ opacity: '1' });
-                // $(`${this}.img:first-child`).css({ opacity: '1' });
+            if (height == '100px') {
+                $(this).animate({ height: '680px' }, 500);
+                $(this).removeClass("services-card-not-selected");
+                $(this).addClass("services-card-selected");
             } else {
-                // $(this).css({ "height": "75px" });
-                $(this).animate({ height: '125px' }, 500);
-                // $(this).animate({ opacity: '.7' }, 500);
-                // $(this).css({ "opacity": '.7' });
+                $(this).animate({ height: '100px' }, 500);
+                $(this).removeClass("services-card-selected");
+                $(this).addClass("services-card-not-selected");
             }
         }
         
