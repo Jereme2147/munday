@@ -133,8 +133,9 @@ body {
 }
 
 #sub-menu h2 {
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 #sub-menu div {
@@ -160,6 +161,12 @@ body {
   }
   #sub-menu h2 {
     font-size: 30px;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1060px) {
+  #sub-menu h2 {
+    font-size: 20px;
   }
 }
 
