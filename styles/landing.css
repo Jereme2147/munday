@@ -21,6 +21,9 @@ html h3 {
 }
 
 #black-logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   fill: #1c3144;
   width: 90%;
 }
